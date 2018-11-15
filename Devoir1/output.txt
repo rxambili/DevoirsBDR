@@ -1,0 +1,797 @@
+************************************************************************
+************************************************************************
+VALEUR DE I =  0
+************************************************************************
+[ { _id: 'PageA',
+    value: { type: 'full', changed: false, pageRank: 1, adjlist: [Array] } },
+  { _id: 'PageB',
+    value: { type: 'full', changed: true, pageRank: 0.575, adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 2.275,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: { type: 'full', changed: true, pageRank: 0.575, adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  1
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 2.0837499999999998,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.575,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.1912500000000001,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.1912500000000001,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  2
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.1625625,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.0355937499999999,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.6518437499999998,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.1625625,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  3
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.5540671874999998,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.6440890625,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.6518437499999998,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.6440890625,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  4
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.5540671874999998,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.8104785546875,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4854542578125,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4854542578125,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  5
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.412636119140625,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.8104785546875,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.626885326171875,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.412636119140625,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  6
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.5328525272460936,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7503703506347656,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.5667771221191407,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7503703506347656,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.5667771221191407,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  7
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4817605538012697,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.8014623240795897,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.5667771221191407,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4817605538012697,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  8
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4817605538012697,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7797482353655396,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.5884912108331908,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7797482353655396,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  9
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.500217529208212,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7797482353655396,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.5700342354262484,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.5700342354262484,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  10
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.484529100112311,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7875924499134901,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.577878449974199,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.484529100112311,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  11
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4911966824780691,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7809248675477323,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.577878449974199,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7809248675477323,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  12
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4911966824780691,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7837585900531794,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.575044727468752,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.575044727468752,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  13
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4887880183484392,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7837585900531794,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.577453391598382,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4887880183484392,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  14
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4908353828586245,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7827349077980866,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.576429709343289,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7827349077980866,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.576429709343289,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  15
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4899652529417957,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7836050377149154,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.576429709343289,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4899652529417957,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  16
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4899652529417957,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7832352325002632,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.5767995145579414,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7832352325002632,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  17
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4902795873742503,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7832352325002632,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.5764851801254869,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.5764851801254869,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  18
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4900124031066637,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7833688246340563,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.57661877225928,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 1.4900124031066637,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  19
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4901259564203881,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7832552713203321,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.57661877225928,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+LOG DES DOCS CHANGES
+************************************************************************
+[ { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: true,
+       pageRank: 0.7832552713203321,
+       adjlist: [Array] } } ]
+************************************************************************
+************************************************************************
+************************************************************************
+VALEUR DE I =  20
+************************************************************************
+[ { _id: 'PageA',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.4901259564203881,
+       adjlist: [Array] } },
+  { _id: 'PageB',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.7833035314786649,
+       adjlist: [Array] } },
+  { _id: 'PageC',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 1.5765705121009472,
+       adjlist: [Array] } },
+  { _id: 'PageD',
+    value: 
+     { type: 'full',
+       changed: false,
+       pageRank: 0.15000000000000002,
+       adjlist: [Array] } } ]
+************************************************************************
+SORTIE CAR CONVERGE
+Fin du programme!!!

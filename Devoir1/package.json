@@ -1,0 +1,22 @@
+{
+  "name": "testmapreduce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "dummy-json": "^2.0.0",
+    "fs": "0.0.1-security",
+    "mongodb": "^3.1.6",
+    "mongojs": "^2.6.0",
+    "sqlite3": "^4.0.2"
+  }
+}
