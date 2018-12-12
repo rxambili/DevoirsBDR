@@ -21,9 +21,7 @@ qui permet a l'algorithme glouton de coloriage de graphe de trancher dans ses d�
  C'est donc un algorithme très simple de coloriage (pas le meilleur).
  */
 
-package Combat1 {
-
-  import org.apache.spark.SparkConf
+import org.apache.spark.SparkConf
   import org.apache.spark.SparkContext
   import org.apache.spark.graphx.{Edge, EdgeContext, Graph, _}
 
@@ -212,4 +210,3 @@ package Combat1 {
     val res = algoCombat1.execute(myGraph, 30, sc)
     //println("\nNombre de couleur trouvées: " + algoCombat1.getChromaticNumber(res))
   }
-}
