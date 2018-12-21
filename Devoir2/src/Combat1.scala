@@ -1,25 +1,5 @@
-//Petit programme exemple pour 8inf803
-//Edmond La Chance
+// Combat1
 
-/*
-Ce petit programme en scala execute un algorithme de graphe itératif sur Spark GraphX. Cet algorithme
-essaie de colorier un graphe avec un nombre de couleurs minimal (mais l'algorithme est très random et ne
-donne pas de très bons résultats!). Par contre le code est très court donc il est intéressant comme exemple.
-
-Voici comment ce programme fonctionne :
-
-1. L'exécution commence à testPetersenGraph.
-2. On crée le graphe directement dans le code. Le tiebreaking value est une valeur random (ici hardcodée)
-qui permet a l'algorithme glouton de coloriage de graphe de trancher dans ses décisions
-3. La boucle itérative se trouve dans la fonction execute
-4. L'algorithme FC2 fonctionne de la façon suivante :
-  Chaque itération, les noeuds du graphe s'envoient des messages. Si on est un noeud, et qu'on trouve un voisin qui a un meilleur
-  tiebreak, on doit augmenter notre couleur. Les noeuds qui n'augmentent pas gardent une couleur fixe et
-  arrêtent d'envoyer des messages.
-  L'algorithme s'arrête lorsqu'il n'y a plus de messages envoyés
-
- C'est donc un algorithme très simple de coloriage (pas le meilleur).
- */
 
 package Combat1 {
 

@@ -1,25 +1,4 @@
-//Petit programme exemple pour 8inf803
-//Edmond La Chance
-
-/*
-Ce petit programme en scala execute un algorithme de graphe itératif sur Spark GraphX. Cet algorithme
-essaie de colorier un graphe avec un nombre de couleurs minimal (mais l'algorithme est très random et ne
-donne pas de très bons résultats!). Par contre le code est très court donc il est intéressant comme exemple.
-
-Voici comment ce programme fonctionne :
-
-1. L'exécution commence à testPetersenGraph.
-2. On crée le graphe directement dans le code. Le tiebreaking value est une valeur random (ici hardcodée)
-qui permet a l'algorithme glouton de coloriage de graphe de trancher dans ses décisions
-3. La boucle itérative se trouve dans la fonction execute
-4. L'algorithme FC2 fonctionne de la façon suivante :
-  Chaque itération, les noeuds du graphe s'envoient des messages. Si on est un noeud, et qu'on trouve un voisin qui a un meilleur
-  tiebreak, on doit augmenter notre couleur. Les noeuds qui n'augmentent pas gardent une couleur fixe et
-  arrêtent d'envoyer des messages.
-  L'algorithme s'arrête lorsqu'il n'y a plus de messages envoyés
-
- C'est donc un algorithme très simple de coloriage (pas le meilleur).
- */
+// combat 2
 
 import org.apache.spark.SparkConf
   import org.apache.spark.SparkContext
@@ -165,45 +144,68 @@ import org.apache.spark.SparkConf
     }
   }
 
-  object testCombat1 extends App {
+  object testCombat2 extends App {
     val conf = new SparkConf()
       .setAppName("Petersen Graph (10 nodes)")
       .setMaster("local[*]")
     val sc = new SparkContext(conf)
     sc.setLogLevel("ERROR")
-    var myVertices = sc.makeRDD(Array(
-      (1L, new node(id = 1, name = "Solar", hp = 363, armor = 44, regen = 15, atk = 35, nbAtk = 4, damages = "3d6 + 18", death = false)),
-      (2L, new node(id = 2, name = "Worg Rider 1", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (3L, new node(id = 3, name = "Worg Rider 2", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (4L, new node(id = 4, name = "Worg Rider 3", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (5L, new node(id = 5, name = "Worg Rider 4", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (6L, new node(id = 6, name = "Worg Rider 5", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (7L, new node(id = 7, name = "Worg Rider 6", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (8L, new node(id = 8, name = "Worg Rider 7", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (9L, new node(id = 9, name = "Worg Rider 8", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (10L, new node(id = 10, name = "Worg Rider 9", hp = 13, armor = 18, regen = 0, atk = 6, damages = "1d8 + 2", death = false)),
-      (11L, new node(id = 11, name = "Brutal Warlord", hp = 141, armor = 27, regen = 0, atk = 20, damages = "1d8 + 10", death = false)),
-      (12L, new node(id = 12, name = "Barbare Orc 1", hp = 142, armor = 17, regen = 0, atk = 19, damages = "1d8 + 10", death = false)),
-      (13L, new node(id = 13, name = "Barbare Orc 2", hp = 142, armor = 17, regen = 0, atk = 19, damages = "1d8 + 10", death = false)),
-      (14L, new node(id = 14, name = "Barbare Orc 3", hp = 142, armor = 17, regen = 0, atk = 19, damages = "1d8 + 10", death = false)),
-      (15L, new node(id = 15, name = "Barbare Orc 4", hp = 142, armor = 17, regen = 0, atk = 19, damages = "1d8 + 10", death = false))))
 
-    var myEdges = sc.makeRDD(Array(
-      Edge(1L, 2L, "1"),
-      Edge(1L, 3L, "2"),
-      Edge(1L, 4L, "3"),
-      Edge(1L, 5L, "4"),
-      Edge(1L, 6L, "5"),
-      Edge(1L, 7L, "6"),
-      Edge(1L, 8L, "7"),
-      Edge(1L, 9L, "8"),
-      Edge(1L, 10L, "9"),
-      Edge(1L, 11L, "10"),
-      Edge(1L, 12L, "11"),
-      Edge(1L, 13L, "12"),
-      Edge(1L, 14L, "13"),
-      Edge(1L, 15L, "14")
-    ))
+    // création des sommets
+    var verticesArray = new Array[(Long, node)](222);
+
+    verticesArray(0) = (1L, new node(id = 1, name = "Solar", hp = 363, armor = 44, regen = 15, atk = 35, nbAtk = 4, damages = "3d6 + 18", death = false))
+    var indice = 1
+    for (i <- 0 to 1) {
+      verticesArray(indice) = ((indice+1), new node(id = indice+1, name = "Planetar", hp = 229, armor = 32, regen = 10, atk = 27, nbAtk = 3, damages = "3d6 + 15", death = false))
+      indice = indice + 1
+    }
+    for (i <- 0 to 1) {
+      verticesArray(indice) = (indice+1, new node(id = indice+1, name = "Movanic Deva", hp = 126, armor = 24, regen = 0, atk = 12, nbAtk = 1, damages = "3d6 + 7", death = false))
+      indice = indice + 1
+    }
+    for (i <- 0 to 4) {
+      verticesArray(indice) = (indice+1, new node(id = indice+1, name = "Astral Deva", hp = 172, armor = 29, regen = 0, atk = 14, nbAtk = 1, damages = "3d8 + 42", death = false))
+      indice = indice + 1
+    }
+    verticesArray(indice) = (indice+1, new node(id = indice+1, name = "Dragon", hp = 449, armor = 39, regen = 0, atk = 37, nbAtk = 1, damages = "4d8 + 24", death = false))
+    indice = indice + 1
+    for (i <- 0 to 199) {
+      verticesArray(indice) = (indice+1, new node(id = indice+1, name = "Barbarian Orc", hp = 143, armor = 16, regen = 0, atk = 22, nbAtk = 1, damages = "3d6 + 14", death = false))
+      indice = indice + 1
+    }
+    for (i <- 0 to 9) {
+      verticesArray(indice) = (indice+1, new node(id = indice+1, name = "Angel Slayer", hp = 112, armor = 26, regen = 0, atk = 21, nbAtk = 1, damages = "3d8 + 15", death = false))
+      indice = indice + 1
+    }
+    verticesArray(indice) = (indice+1, new node(id = indice+1, name = "Tiger", hp = 105, armor = 17, regen = 0, atk = 18, nbAtk = 2, damages = "2d4 + 8", death = true))
+    indice = indice + 1
+
+    var myVertices = sc.makeRDD(verticesArray)
+
+    // DEBUG
+    verticesArray.foreach(
+       elem => println(elem)
+    )
+
+    // création des arêtes
+
+    var edgesArray = new Array[Edge[String]](2120);
+
+    var edgeInd = 0;
+    for (i <- 1 to 10) {
+      for (j <- 11 to 222) {
+        edgesArray(edgeInd) = Edge(i,j, edgeInd.toString())
+        edgeInd = edgeInd + 1
+      }
+    }
+
+    // DEBUG
+    edgesArray.foreach(
+      elem => println(elem)
+    )
+
+    var myEdges = sc.makeRDD(edgesArray)
 
     var myGraph = Graph(myVertices, myEdges)
     val algoCombat1 = new Combat1()
